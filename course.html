@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Academy - Courses</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+    <div class="sidebar">
+        <i class="fas fa-bars menu-icon" id="menuToggle"></i>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="home.html"><strong>Home</strong></a></li>
+            <li><a href="instructor_course.html">Switch to instructor’s course</a></li>
+            </ul>
+        </div>
+    </div>
+            <h2>Web Academy</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+
+        <section class="courses">
+            <div class="course-category">
+                <h3>Recommended Courses</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="one.jpeg" alt="Introduction to Web Development">
+                        <p>Introduction to Web Development</p>
+                    </div>
+                    <div class="course">
+                        <img src="two.jpeg" alt="HTML & CSS Basics">
+                        <p>HTML & CSS Basics</p>
+                    </div>
+                    <div class="course">
+                        <img src="three.jpeg" alt="JavaScript for Beginners">
+                        <p>JavaScript for Beginners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-category">
+                <h3>Front-End Development</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="four.jpeg" alt="React.js Fundamentals">
+                        <p>React.js Fundamentals</p>
+                    </div>
+                    <div class="course">
+                        <img src="five.jpeg" alt="Vue.js Essentials">
+                        <p>Vue.js Essentials</p>
+                    </div>
+                    <div class="course">
+                        <img src="six.png" alt="Bootstrap & Tailwind CSS">
+                        <p>Bootstrap & Tailwind CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-category">
+                <h3>Back-End Development</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="seven.jpeg" alt="Node.js & Express.js">
+                        <p>Node.js & Express.js</p>
+                    </div>
+                    <div class="course">
+                        <img src="eight.jpeg" alt="PHP & Laravel">
+                        <p>PHP & Laravel</p>
+                    </div>
+                    <div class="course">
+                        <img src="nine.png" alt="Python Django">
+                        <p>Python Django</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-category">
+                <h3>Web Development Frameworks</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="ten.png" alt="Angular for Web Apps">
+                        <p>Angular for Web Apps</p>
+                    </div>
+                    <div class="course">
+                        <img src="eleven.jpg" alt="Next.js for SSR">
+                        <p>Next.js for SSR</p>
+                    </div>
+                    <div class="course">
+                        <img src="twelve.png" alt="Spring Boot for Java">
+                        <p>Spring Boot for Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-category">
+                <h3>Designing Tools</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="thirteen.png" alt="Figma for UI/UX">
+                        <p>Figma for UI/UX</p>
+                    </div>
+                    <div class="course">
+                        <img src="fourteen.jpeg" alt="Adobe XD Basics">
+                        <p>Adobe XD Basics</p>
+                    </div>
+                    <div class="course">
+                        <img src="fifteen.jpeg" alt="Canva for Beginners">
+                        <p>Canva for Beginners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-category">
+                <h3>Others</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="sixteen.png" alt="Git & GitHub">
+                        <p>Git & GitHub</p>
+                    </div>
+                    <div class="course">
+                        <img src="seventeen.jpeg" alt="SEO & Web Optimization">
+                        <p>SEO & Web Optimization</p>
+                    </div>
+                    <div class="course">
+                        <img src="eighteen.jpeg" alt="Web Security Fundamentals">
+                        <p>Web Security Fundamentals</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menu = document.querySelector(".menu");
+        
+            menuIcon.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        
+            document.addEventListener("click", function(event) {
+                if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+        });
+        </script>
+        
+
+</body>
+</html>
